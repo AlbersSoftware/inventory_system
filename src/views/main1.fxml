@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="820.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.mainController">
+   <children>
+      <Button fx:id="btnScene2" layoutX="39.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleButtonAddPart" text="Add" />
+      <Button fx:id="btnScene3" layoutX="105.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleButtonModPart" text="Modify" />
+      <Button fx:id="deletePartButton" layoutX="184.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleMainScreenDeletePartButton" text="Delete" />
+      <TextField fx:id="partSearch" layoutX="229.0" layoutY="3.0" onAction="#handleMainScreenPartSearch" promptText="Search Part" />
+      <TableView fx:id="mainScreenPartsTable" layoutX="14.0" layoutY="36.0" prefHeight="200.0" prefWidth="384.0" style="-fx-background-color: lightyellow;">
+        <columns>
+          <TableColumn fx:id="partIDCol" prefWidth="75.0" style="-fx-background-color: orange;" text="Part ID" />
+          <TableColumn fx:id="partNameCol" prefWidth="75.0" style="-fx-background-color: orange;" text="Part Name" />
+            <TableColumn fx:id="partInventoryCol" prefWidth="105.0" style="-fx-background-color: orange;" text="Inventory Level" />
+            <TableColumn fx:id="partPriceCol" prefWidth="123.0" style="-fx-background-color: orange;" text="Price/Cost per Unit" />
+        </columns>
+      </TableView>
+      <TextField fx:id="productSearch" layoutX="600.0" onAction="#handleMainScreenProductSearch" promptText="Search Product" />
+      <TableView fx:id="mainScreenProductsTable" layoutX="410.0" layoutY="36.0" prefHeight="200.0" prefWidth="410.0" style="-fx-background-color: lightyellow;">
+        <columns>
+          <TableColumn fx:id="productIDCol" prefWidth="75.0" style="-fx-background-color: orange;" text="Product ID" />
+          <TableColumn fx:id="productNameCol" prefWidth="75.0" style="-fx-background-color: orange;" text="Product Name" />
+            <TableColumn fx:id="productInventoryCol" prefWidth="116.0" style="-fx-background-color: orange;" text="Inventory level" />
+            <TableColumn fx:id="productPriceCol" prefWidth="143.0" style="-fx-background-color: orange;" text="Price/Cost per Unit" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAddproduct" layoutX="446.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleButtonAddProd" text="Add" />
+      <Button fx:id="btnModifyproduct" layoutX="537.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleButtonModProd" text="Modify" />
+      <Button fx:id="Deleteproduct" layoutX="677.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleMainScreenDeleteProductButton" text="Delete" />
+      <Button fx:id="exitProject" layoutX="716.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleMainScreenExitButton" text="Exit" />
+   </children>
+</AnchorPane>
